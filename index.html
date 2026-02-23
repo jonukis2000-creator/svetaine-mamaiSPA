@@ -1,13 +1,201 @@
-< ! DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="lt">
 <head>
     <meta charset="UTF-8">
-    <title>Mano svetaine</</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kūdikių SPA – Hidroterapija naujagimiams</title>
+    <meta name="description" content="Profesionalus kūdikių SPA – hidroterapijos, mankštos ir vandeninės procedūros mažyliams su patyrusiais specialistais.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+        header {
+            background: #1c5d99;
+            color: white;
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            margin: auto;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .hero {
+            background: url('https://images.unsplash.com/photo-1604436466190-792269166e1b') no-repeat center center/cover;
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+        .btn {
+            padding: 12px 25px;
+            background: #2a9df4;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 15px;
+        }
+        section {
+            padding: 80px 20px;
+            width: 90%;
+            margin: auto;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .service-box {
+            flex: 1;
+            min-width: 250px;
+            background: #f9f9f9;
+            padding: 25px;
+            border-radius: 8px;
+        }
+        footer {
+            background: #1c5d99;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background: #2a9df4;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        @media(max-width:768px){
+            .services {
+                flex-direction: column;
+            }
+            .hero h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
 </head>
 <body>
- <h1>Labas, Mamyte</h1>
-  <p>Svetaine kuriama, tau, myliu</p>
+
+<header>
+    <nav>
+        <h2>Kūdikių SPA</h2>
+        <ul>
+            <li><a href="#services">Procedūros</a></li>
+            <li><a href="#about">Apie SPA</a></li>
+            <li><a href="#pricing">Kainos</a></li>
+            <li><a href="#contact">Kontaktai</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <div>
+        <h1>Saugios ir malonios vandens procedūros mažyliams</h1>
+        <p>Kūdikių hidroterapija, plukdymas ir masažas vandenyje su profesionalia priežiūra</p>
+        <a href="#contact" class="btn">Užsiregistruoti</a>
+    </div>
+</section>
+
+<section id="services">
+    <h2>Siūlomos procedūros</h2>
+    <div class="services">
+        <div class="service-box">
+            <h3>Hidroterapija</h3>
+            <p>Švelni vandens terapija, kurios metu kūdikis plukdomas šiltame vandenyje, gerinamas raumenų tonusas ir koordinacija.</p>
+        </div>
+        <div class="service-box">
+            <h3>Kūdikių mankšta vandenyje</h3>
+            <p>Individualiai pritaikyta kūdikių mankšta su kvalifikuotų specialistų priežiūra, skatinanti natūralų vystymąsi.</p>
+        </div>
+        <div class="service-box">
+            <h3>Masažas baseine</h3>
+            <p>Jaukūs ir raminantys judesiai šiltame baseino vandenyje mažina stresą ir gerina kraujotaką.</p>
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <h2>Apie mūsų SPA</h2>
+    <p>Mūsų kūdikių SPA yra saugi vieta, kur mažyliai kartu su savo tėveliais gali patirti švelnias vandenines procedūras specialiai pritaikytame baseine. Vanduo palaiko natūralias kūdikio judėjimo reakcijas, o procedūros padeda nuraminti kūdikį, pagerinti miego ritmą ir stiprinti ryšį tarp mamos ir vaiko. Mes dirbame laikydamiesi aukštų higienos standartų ir visada užtikriname saugią aplinką.</p>
+</section>
+
+<section id="pricing">
+    <h2>Kainos</h2>
+    <div class="services">
+        <div class="service-box">
+            <h3>Hidroterapijos užsiėmimas</h3>
+            <p>Nuo 30 € už sesiją</p>
+        </div>
+        <div class="service-box">
+            <h3>Individuali mankšta</h3>
+            <p>Nuo 35 € už užsiėmimą</p>
+        </div>
+        <div class="service-box">
+            <h3>Abonementai</h3>
+            <p>5 kartų pakuotė nuo 130 €</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Kontaktai</h2>
+    <p>Telefonas: +370 696 17171</p>
+    <p>El. paštas: kudikiu.spa@gmail.com</p>
+    <p>Svetainė: <a href="https://kudikiuspa.lt">kudikiuspa.lt</a></p>
+
+    <form>
+        <input type="text" placeholder="Jūsų vardas" required>
+        <input type="email" placeholder="El. paštas" required>
+        <textarea rows="5" placeholder="Jūsų žinutė"></textarea>
+        <button type="submit">Siųsti žinutę</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 Kūdikių SPA. Visos teisės saugomos</p>
+</footer>
+
 </body>
-  <html>
-     
-      
+</html>
